@@ -12,6 +12,6 @@ if __name__ == '__main__':
                         help="Maximum balls that each bin can contain. "
                              "This variable also represents the amount of bins used")
 
-    args = parser.parse_args(sys.argv[1:])
+    args = parser.parse_args()
 
     print(distribute_balls_in_bins(args.balls, len(args.max_balls_per_bin), args.max_balls_per_bin))
